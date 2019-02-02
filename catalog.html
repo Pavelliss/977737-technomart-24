@@ -7,14 +7,15 @@
 <body>
 	<header class="main-header login-menu-list">
 		<section class="user-menu">
-  			<!--Form will be here-->
-  			<ul>
-  				<li><a class="button-home" href="index.html">Техномарт</a></li>
-  				<li>Поиск</li>
-  				<li><a href="#">Закладки</a></li>
-  				<li><a href="#">Корзина</a></li>
-  				<li><a class="button-checkout" href="#">Оформить заказ</a></li>
-  			</ul>
+  			<form action="echo.htmlacademy.ru" method="get">
+            <ul>
+                <li><a class="button-home" href="index.html">Техномарт</a></li>
+                <li><input type="search" name="search" id="search">Поиск</li>
+                <li><a href="#">Закладки</a></li>
+                <li><a href="#">Корзина</a></li>
+                <li><a class="button-checkout" href="#">Оформить заказ</a></li>
+            </ul>
+        </form>
   		</section>
 		<div>
 	  		<p class="slogan">
@@ -58,7 +59,54 @@
 		<h1 class="desk">Перфораторы</h1>
 		<section class="filter">
 			<h2>Фильтр:</h2>
-			<!--form will be here-->
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li>
+							<label>Bosch
+								<input type="checkbox" name="filter" checked>
+							</label>
+						</li>
+						<li>
+							<label>Интерскол
+								<input type="checkbox" name="filter">
+							</label>
+						</li>
+						<li>
+							<label>Makita
+								<input type="checkbox" name="filter" checked>
+							</label>
+						</li>
+						<li>
+							<label>Dewalt
+								<input type="checkbox" name="filter">
+							</label>
+						</li>
+						<li>
+							<label>Hitachi
+								<input type="checkbox" name="filter">
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<ul>
+						<li>
+							<label>Аккумуляторные
+								<input type="radio" name="filter-radio" checked>
+							</label>
+						</li>
+						<li>
+							<label>Сетевые
+								<input type="radio" name="filter-radio">
+							</label>
+						</li>
+					</ul>
+					</fieldset>
+				<input type="submit" value="Показать">
+			</form>
 		</section>
 		
 		<section class="catalor">
@@ -207,6 +255,12 @@
 						<a class="button-buy" href="#">Купить</a>
 						<a class="buttom-marker" href="#">В закладки</a>
 					</div>
+					<div class="popup">
+						<p>Товар добавлен в корзину!</p>
+						<a href="#" class="button">Оформить заказ</a>
+						<button class="button">Продолжить покупки</button>
+						<button class="modal-close">Закрыть</button>
+					</div>
 				</li>
 			</ul>
 			
@@ -240,10 +294,10 @@
             <p>&copy;2010-2019 Компания "Техномарт"
                 Все права защищены
             </p>
-                <ul class="social-footer">
-                    <li><a class="button-social" href="#">Вконтакте</a></li>
-                    <li><a class="button-social" href="#">Фэйсбук</a></li>
-                    <li><a class="button-social" href="#">Инстаграм</a></li>
+               <ul class="social-footer">
+                    <li><a class="button-social" href="#"><span class="visually-hidden">Техномарт в Вконтакте</span></a></li>
+                    <li><a class="button-social" href="#"><span class="visually-hidden">Техномарт в Фэйсбук</span></a></li>
+                    <li><a class="button-social" href="#"><span class="visually-hidden">Техномарт в Инстаграм</span></a></li>
                 </ul>
             <p>
                 Обратная связь:
