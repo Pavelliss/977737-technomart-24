@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+
+    font-family: "Cuprum", "PT Sans", Aria, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #32425c;
+
+    background-color: #fff;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*user-menu*/
+.main-header{
+    background-color: #f4f7f9;
+    color: #ee3643;
+}
+
+.user-menu{
+    color: #fff;
+    font-size: 17px;
+    line-height: 18px;
+
+    background-color: #293449;
+}
+
+.user-menu li{
+    list-style:none;
+}
+
+.user-menu a{
+    color: #fff;
+}
+
+.button-home{
+    background-color: #ee3643;
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button-home:hover{
+    background-color: #ca2c37;
+}
+
+.button-home:focus {
+    background-color: #ba2732;
+}
+
+.button-checkout{
+    background-color: #63a63e;
+}
+
+.button-checkout:hover{
+    background-color: #5fbb2d;
+}
+
+.button-checkout:focus {
+    background-color: #518534;
+}
+
+.main-header input{
+    background-color: #293449;
+}
+
+
+
+/*authorization, nav*/
+
+.slogan{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+
+    color: #ee3643;;
+}
+
+address{
+    font-style: normal;
+}
+
+.address-header{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #32425c;
+ }
+
+.phone-header{
+    font-size: 21px;
+    font-weight:400;
+    line-height: 21px
+
+    color: #ee3643;
+}
+
+.contact-header a{
+    color: #ee3643;
+}
+
+.login-menu-item{
+    list-style: none;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.login-menu-item a{
+    color: #000;
+    background-color: #fff
+}
+
+.login-menu-item a:hover{
+   color: #ee3643
+}
+
+.login-menu-item a:focus{
+   color: #c5c5c5
+}
+
+.login-menu-order{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: underline;
+    list-style: none;
+
+    color: #32425c;
+}
+
+.login-menu-order a{
+    color: #32425c;
+}
+
+.login-menu-order a:hover{
+  color: #ee3643;
+}
+
+.login-menu-name a:hover{
+    color: #000000;
+}
+
+.login-menu-order a:focus,
+.login-menu-nema a:focus{
+    color: #32425c;
+}
+
+.nav-header {
+    font-size:17px;
+    font-weight: 400;
+    line-height:17px;
+
+    background-color: #32425c;
+    color: #fff;
+}
+
+.nav-header li{
+    list-style:none;
+}
+
+.nav-header a{
+
+    color: #fff;
+}
+
+.nav-header a:hover {
+    background-color:#293449;
+}
+
+.nav-header a:focus {
+    background-color:#1d2739;
+    color: #787e88;
+}
+/*Company-info*/
+
+.company-info p{
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    background-color: #fff;
+    color:#000;
+}
+
+.company-info h2,.company-info h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.delevery-list{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    list-style: none;
+
+
+}
+
+.button{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    color: #fff;
+}
+
+.button:hover{
+    background-color: #ca2c37;
+}
+
+.button:focus{
+    background-color: #ba2732;
+}
+
+
+/*main breadcrumbs*/
+
+.breadcrumbs{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style: none
+}
+
+.breadcrumbs a{
+    color: #000;
+}
+
+.breadcrumbs{
+    list-style: none;
+}
+
+.desk{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    background-color: #f2f6f8;
+    color: #000;
+}
+/*main filter*/
+
+legend{
+    font-family: "PT Sans" sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.filter li{
+    list-style: none;
+}
+
+.filter li{
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.button-apply{
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+
+    background-color: #fff;
+    color: #000;
+}
+
+fieldset{
+    border:none
+}
+
+/*main catalog*/
+
+.catalog{
+    font-family: "PT Sana", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.catalog a{
+    color: #000;
+}
+
+.catalog-item{
+    list-style:none;
+}
+
+.catalog-item del{
+    color: #a0a0a0;
+}
+
+.catalog-item .price{
+    color: #000;
+}
+
+.catalog-item li:hover{
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.pop-ups{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.pop-ups .button-buy{
+    color: #fff;
+}
+
+.pop-ups .button-marker{
+    color: #000;
+}
+
+.button-buy{
+    box-shadow: inset 0 -3px 0 #367315;
+    background-color: #63a63e;
+}
+
+.button-buy:hover{
+    background-color:#5fbb2d;
+}
+
+.button-buy:focus{
+    background-color: #518534;
+}
+
+.button-marker{
+    background-color: #fff;
+    color: #32425c;
+    border: 3px solid #63a63e;
+}
+
+.button-marker:hover{
+    border: 3px solid #32425c;
+}
+
+.button-marker:focus{
+    opacity: 0.3;
+}
+
+.pagination-list{
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    list-style: none;
+
+    color:#000;
+}
+
+.pagination-list a:hover{
+    border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:focus{
+    border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active{
+    background-color:#ee3643;
+    color:#fff;
+}
+
+
+/*Footer*/
+
+footer{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    background-color: #293449;
+    color: #fff;
+}
+
+.footer{
+    background-color: #32425c;
+}
+
+footer li{
+    list-style:none;
+}
+
+footer a{
+    color: #fff;
+}
+
+.nav-footer a:focus{
+    color: #929caa;
+}
+
+.material a:focus{
+    color: #767268;
+}
+
+.material a, .contact-academy a{
+    color: #ffd180;
+}
+
+.nav-footer a:hover,
+.contact-academy a:hover{
+    text-decoration: underline;
+}
+
+.contact-academy a:focus{
+    color: #ee3643;
+}
+
+.social-footer a:hover,
+.social-footer a:focus{
+    background-color: #ee3643;
+}
