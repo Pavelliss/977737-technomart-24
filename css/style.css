@@ -1,14 +1,30 @@
 body{
     margin: 0;
 
-    font-family: "Cuprum", "PT Sans", Aria, sans-serif;
+    font-family: "Cuprum", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #32425c;
 
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a{
@@ -22,7 +38,7 @@ a{
 }
 
 .user-menu{
-    color: #fff;
+    color: #ffffff;
     font-size: 17px;
     line-height: 18px;
 
@@ -30,11 +46,11 @@ a{
 }
 
 .user-menu li{
-    list-style:none;
+    list-style: none;
 }
 
 .user-menu a{
-    color: #fff;
+    color: #ffffff;
 }
 
 .button-home{
@@ -42,11 +58,12 @@ a{
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.button-home:hover{
+.button-home:hover,
+.button-home:focus{
     background-color: #ca2c37;
 }
 
-.button-home:focus {
+.button-home:active {
     background-color: #ba2732;
 }
 
@@ -54,11 +71,12 @@ a{
     background-color: #63a63e;
 }
 
-.button-checkout:hover{
+.button-checkout:hover,
+.button-checkout:focus{
     background-color: #5fbb2d;
 }
 
-.button-checkout:focus {
+.button-checkout:active {
     background-color: #518534;
 }
 
@@ -66,6 +84,9 @@ a{
     background-color: #293449;
 }
 
+.main-header input:active{
+    background-color: #ffffff;
+}
 
 
 /*authorization, nav*/
@@ -75,10 +96,10 @@ a{
     font-style: italic;
     line-height: 23px;
 
-    color: #ee3643;;
+    color: #ee3643;
 }
 
-address{
+.address-header{
     font-style: normal;
 }
 
@@ -92,7 +113,7 @@ address{
 
 .phone-header{
     font-size: 21px;
-    font-weight:400;
+    font-weight: 400;
     line-height: 21px
 
     color: #ee3643;
@@ -111,15 +132,16 @@ address{
 
 .login-menu-item a{
     color: #000;
-    background-color: #fff
+    background-color: #ffffff
 }
 
-.login-menu-item a:hover{
-   color: #ee3643
-}
-
+.login-menu-item a:hover,
 .login-menu-item a:focus{
-   color: #c5c5c5
+    color: #ee3643
+}
+
+.login-menu-item a:active{
+    color: #c5c5c5
 }
 
 .login-menu-order{
@@ -136,43 +158,47 @@ address{
     color: #32425c;
 }
 
-.login-menu-order a:hover{
-  color: #ee3643;
+.login-menu-order a:hover,
+.login-menu-order a:focus{
+    color: #ee3643;
 }
 
-.login-menu-name a:hover{
+.login-menu-name a:hover,
+.login-menu-name a:focus{
     color: #000000;
 }
 
-.login-menu-order a:focus,
-.login-menu-nema a:focus{
+.login-menu-order a:active,
+.login-menu-name a:active{
     color: #32425c;
+    opacity: 0.3;
 }
 
 .nav-header {
-    font-size:17px;
+    font-size: 17px;
     font-weight: 400;
-    line-height:17px;
+    line-height: 17px;
 
     background-color: #32425c;
-    color: #fff;
+    color: #ffffff;
 }
 
 .nav-header li{
-    list-style:none;
+    list-style: none;
 }
 
 .nav-header a{
 
-    color: #fff;
+    color: #ffffff;
 }
 
-.nav-header a:hover {
-    background-color:#293449;
+.nav-header a:hover,
+.nav-header a:focus{
+    background-color: #293449;
 }
 
-.nav-header a:focus {
-    background-color:#1d2739;
+.nav-header a:active {
+    background-color: #1d2739;
     color: #787e88;
 }
 /*Company-info*/
@@ -182,11 +208,12 @@ address{
     font-size: 13px;
     font-weight: 400;
 
-    background-color: #fff;
-    color:#000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-.company-info h2,.company-info h3{
+.company-info h2,
+.company-info h3{
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
@@ -210,14 +237,15 @@ address{
     text-transform: uppercase;
 
     background-color: #ee3643;
-    color: #fff;
+    color: #ffffff;
 }
 
-.button:hover{
+.button:hover,
+.button:focus{
     background-color: #ca2c37;
 }
 
-.button:focus{
+.button:active{
     background-color: #ba2732;
 }
 
@@ -233,7 +261,7 @@ address{
 }
 
 .breadcrumbs a{
-    color: #000;
+    color: #000000;
 }
 
 .breadcrumbs{
@@ -247,12 +275,12 @@ address{
     text-transform: uppercase;
 
     background-color: #f2f6f8;
-    color: #000;
+    color: #000000;
 }
 /*main filter*/
 
 legend{
-    font-family: "PT Sans" sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
@@ -271,7 +299,7 @@ legend{
     line-height: 20px;
     text-transform: uppercase;
 
-    color: #000;
+    color: #000000;
 }
 
 .button-apply{
@@ -280,12 +308,12 @@ legend{
     font-weight: 400;
     line-height: 18px;
 
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 fieldset{
-    border:none
+    border: none
 }
 
 /*main catalog*/
@@ -296,16 +324,20 @@ fieldset{
     font-weight: 700;
     line-height: 20px;
 
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .catalog a{
-    color: #000;
+    color: #000000;
+}
+
+.catalog-item a{
+    color:#000000;
 }
 
 .catalog-item{
-    list-style:none;
+    list-style: none;
 }
 
 .catalog-item del{
@@ -313,7 +345,7 @@ fieldset{
 }
 
 .catalog-item .price{
-    color: #000;
+    color: #000000;
 }
 
 .catalog-item li:hover{
@@ -328,11 +360,11 @@ fieldset{
 }
 
 .pop-ups .button-buy{
-    color: #fff;
+    color: #ffffff;
 }
 
 .pop-ups .button-marker{
-    color: #000;
+    color: #000000;
 }
 
 .button-buy{
@@ -340,25 +372,27 @@ fieldset{
     background-color: #63a63e;
 }
 
-.button-buy:hover{
-    background-color:#5fbb2d;
+.button-buy:hover,
+.button-buy:focus{
+    background-color: #5fbb2d;
 }
 
-.button-buy:focus{
+.button-buy:active{
     background-color: #518534;
 }
 
 .button-marker{
-    background-color: #fff;
+    background-color: #ffffff;
     color: #32425c;
     border: 3px solid #63a63e;
 }
 
-.button-marker:hover{
+.button-marker:hover,
+.button-marker:focus{
     border: 3px solid #32425c;
 }
 
-.button-marker:focus{
+.button-marker:active{
     opacity: 0.3;
 }
 
@@ -369,20 +403,17 @@ fieldset{
     line-height: 18px;
     list-style: none;
 
-    color:#000;
+    color:#000000;
 }
 
-.pagination-list a:hover{
-    border: 1px solid #bdc6ca;
-}
-
+.pagination-list a:hover,
 .pagination-list a:focus{
     border: 1px solid #bdc6ca;
 }
 
 .pagination-list a:active{
     background-color:#ee3643;
-    color:#fff;
+    color:#ffffff;
 }
 
 
@@ -394,7 +425,7 @@ footer{
     line-height: 24px;
 
     background-color: #293449;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer{
@@ -402,35 +433,39 @@ footer{
 }
 
 footer li{
-    list-style:none;
+    list-style: none;
 }
 
 footer a{
-    color: #fff;
+    color: #ffffff;
 }
 
-.nav-footer a:focus{
+.nav-footer a:active{
     color: #929caa;
 }
 
-.material a:focus{
+.material a:active{
     color: #767268;
 }
 
-.material a, .contact-academy a{
+.material a,
+.contact-academy a{
     color: #ffd180;
 }
 
 .nav-footer a:hover,
-.contact-academy a:hover{
+.nav-footer a:focus,
+.contact-academy a:hover,
+.contact-academy a:focus{
     text-decoration: underline;
 }
 
-.contact-academy a:focus{
+.contact-academy a:active{
     color: #ee3643;
 }
 
 .social-footer a:hover,
-.social-footer a:focus{
+.social-footer a:focus,
+.social-footer a:active{
     background-color: #ee3643;
 }
