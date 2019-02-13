@@ -429,7 +429,7 @@ footer{
 }
 
 .footer{
-    background-color: #32425c;
+   /* background-color: #32425c;*/
 }
 
 footer li{
@@ -438,6 +438,11 @@ footer li{
 
 footer a{
     color: #ffffff;
+}
+
+.contact-academy,
+.footer-contact p{
+    font-size: 16px;
 }
 
 .nav-footer a:active{
@@ -469,3 +474,286 @@ footer a{
 .social-footer a:active{
     background-color: #ee3643;
 }
+
+/*Для сетки*/
+
+/*Header*/
+.main-header{
+
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-menu{
+    width: 100%;
+    min-height: 42px;
+    margin-bottom: 46px;
+
+}
+
+.user-menu ul{
+    padding: 0;
+    margin: 0;
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.authorization{
+   width: 940px;
+   padding: 0 ;
+   margin-bottom: 40px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+.slogan{
+    width:200px;
+    margin-right: 57px;
+    padding-left: 53px;
+}
+
+.contact-header{
+    width: 300px;
+    margin: 0 10px;
+}
+
+.authorization ul{
+    width: 300px;
+    margin-left: 10px;
+}
+
+.nav-header{
+    width: 940px;
+    min-height: 60px;
+    margin-bottom: 60px;
+}
+
+.nav-header ul{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Main*/
+
+.main-index{
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+    }
+
+.company-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about{
+    width: 620;
+    margin-right: 10px;
+}
+
+.contact{
+    width: 300px;
+    margin left: 10px;
+}
+/*Main catalog*/
+
+.breadcrumbs{
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.desk{
+    width: 940px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container-filter-catalog{
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter{
+    width: 220px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog{
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.catalog-item{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 52px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.catalog-item li{
+    width: 219px;
+    min-height: 317px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.catalog-item li:nth-child(3n){
+    margin-right: 0;
+}
+
+.pagination-list{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.pagination-list li{
+    width: 38px;
+    height: 38px
+    margin-right: 10px;
+
+    border: 1px solid #e5e5e5;
+}
+
+/*Footer*/
+
+.main-footer{
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    outline: 1px solid red;
+}
+
+.container{
+    width: 100%;
+    min-height: 193px;
+
+    background-color: #32425c;
+}
+
+.footer{
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer section{
+    width: 380px;
+    margin-right: 10px;
+}
+
+.nav-footer{
+    width: 550px;
+    outline: 1px solid #666;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.nav-footer ul:first-child{
+    padding: 0;
+    margin: 0;
+    width: 550px;
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.material{
+    padding: 0;
+    margin: 0;
+    width: 524px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-contact{
+    width: 940px;
+    min-height: 107px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-contact p{
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    margin-top: 38px;
+    margin-right: 140px;
+}
+
+.social-footer{
+    width: 160px;
+    margin-right: 90px;
+    margin-left: 10px;
+    margin-top: 38px;
+
+    outline: 1px solid #666;
+}
+
+.container-academy{
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 38px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
