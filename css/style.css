@@ -479,8 +479,7 @@ footer a{
 
 /*Header*/
 .main-header{
-
-    margin-bottom: 60px;
+    margin-bottom: 23px;
 
     display: flex;
     flex-direction: column;
@@ -491,33 +490,34 @@ footer a{
     width: 100%;
     min-height: 42px;
     margin-bottom: 46px;
-
 }
 
 .user-menu ul{
     padding: 0;
     margin: 0;
+    min-height: 42px;
     width: 940px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .authorization{
-   width: 940px;
-   padding: 0 ;
-   margin-bottom: 40px;
+    width: 940px;
+    margin-bottom: 40px;
 
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .slogan{
+    margin: 0;
+    padding: 0;
+
     width:200px;
     margin-right: 57px;
     padding-left: 53px;
@@ -529,6 +529,9 @@ footer a{
 }
 
 .authorization ul{
+    margin: 0;
+    padding: 0;
+
     width: 300px;
     margin-left: 10px;
 }
@@ -542,10 +545,12 @@ footer a{
 .nav-header ul{
     padding: 0;
     margin: 0;
+    min-height: 60px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*Main*/
@@ -554,26 +559,36 @@ footer a{
     width: 940px;
     margin: 0 auto;
     margin-bottom: 86px;
-    }
+}
 
 .company-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .about{
-    width: 620;
+    width: 540px;
     margin-right: 10px;
+}
+
+.about h2,
+.contact h3{
+    margin: 0;
+    padding: 0;
 }
 
 .contact{
     width: 300px;
-    margin left: 10px;
+    margin-left: 10px;
 }
+
 /*Main catalog*/
 
 .breadcrumbs{
+    margin: 0;
+    padding: 0;
     width: 940px;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -581,6 +596,7 @@ footer a{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
 }
 
 .desk{
@@ -619,7 +635,7 @@ footer a{
 .catalog-item{
     padding: 0;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 32px;
 
     display: flex;
     flex-direction: row;
@@ -632,6 +648,8 @@ footer a{
     min-height: 317px;
     margin-bottom: 20px;
     margin-right: 20px;
+
+    outline: 1px solid #e5e5e5;
 }
 
 .catalog-item li:nth-child(3n){
@@ -641,15 +659,12 @@ footer a{
 .pagination-list{
     padding: 0;
     margin: 0;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
 .pagination-list li{
-    width: 38px;
-    height: 38px
     margin-right: 10px;
 
     border: 1px solid #e5e5e5;
@@ -663,8 +678,6 @@ footer a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    outline: 1px solid red;
 }
 
 .container{
@@ -690,7 +703,6 @@ footer a{
 
 .nav-footer{
     width: 550px;
-    outline: 1px solid #666;
 
     display: flex;
     flex-direction: column;
@@ -722,8 +734,8 @@ footer a{
 .footer-contact{
     width: 940px;
     min-height: 107px;
-    margin: 0 auto;
     margin-bottom: 40px;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -756,4 +768,3 @@ footer a{
     flex-direction: row;
     justify-content: space-between;
 }
-
