@@ -226,8 +226,6 @@ a{
     font-weight: 400;
     line-height: 20px;
     list-style: none;
-
-
 }
 
 .button{
@@ -428,10 +426,6 @@ footer{
     color: #ffffff;
 }
 
-.footer{
-   /* background-color: #32425c;*/
-}
-
 footer li{
     list-style: none;
 }
@@ -477,13 +471,31 @@ footer a{
 
 /*Для сетки*/
 
+
+body{
+    min-width: 1200px;
+}
+
+html {
+box-sizing: border-box;
+}
+
+.container{
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
 /*Header*/
+
 .main-header{
     margin-bottom: 23px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .user-menu{
@@ -492,12 +504,8 @@ footer a{
     margin-bottom: 46px;
 }
 
-.user-menu ul{
-    padding: 0;
-    margin: 0;
+.user-menu-list{
     min-height: 42px;
-    width: 940px;
-    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -506,7 +514,6 @@ footer a{
 }
 
 .authorization{
-    width: 940px;
     margin-bottom: 40px;
 
     display: flex;
@@ -518,22 +525,26 @@ footer a{
     margin: 0;
     padding: 0;
 
-    width:200px;
-    margin-right: 57px;
+    width: 300px;
+    margin-right: 20px;
     padding-left: 53px;
+    padding-right: 51px;
 }
 
 .contact-header{
     width: 300px;
     margin: 0 10px;
+    margin-right: 20px;
 }
 
-.authorization ul{
+.authorization-list{
     margin: 0;
     padding: 0;
 
     width: 300px;
     margin-left: 10px;
+
+    outline: 1px solid #666;
 }
 
 .nav-header{
@@ -542,7 +553,7 @@ footer a{
     margin-bottom: 60px;
 }
 
-.nav-header ul{
+.nav-header-list{
     padding: 0;
     margin: 0;
     min-height: 60px;
@@ -555,17 +566,12 @@ footer a{
 
 /*Main*/
 
-.main-index{
-    width: 940px;
-    margin: 0 auto;
-    margin-bottom: 86px;
-}
-
 .company-info{
+    margin-bottom: 86px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .about{
@@ -587,16 +593,11 @@ footer a{
 /*Main catalog*/
 
 .breadcrumbs{
-    margin: 0;
-    padding: 0;
-    width: 940px;
-    margin: 0 auto;
     margin-bottom: 25px;
 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
 }
 
 .desk{
@@ -608,9 +609,6 @@ footer a{
 }
 
 .container-filter-catalog{
-    width: 940px;
-    margin: 0 auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -626,6 +624,7 @@ footer a{
 
 .catalog{
     width: 700px;
+    margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
@@ -635,7 +634,7 @@ footer a{
 .catalog-item{
     padding: 0;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
 
     display: flex;
     flex-direction: row;
@@ -659,6 +658,7 @@ footer a{
 .pagination-list{
     padding: 0;
     margin: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -674,13 +674,9 @@ footer a{
 
 .main-footer{
     margin-top: 40px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.container{
+.background-container{
     width: 100%;
     min-height: 193px;
 
@@ -688,9 +684,6 @@ footer a{
 }
 
 .footer{
-    width: 940px;
-    margin: 0 auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -732,10 +725,7 @@ footer a{
 }
 
 .footer-contact{
-    width: 940px;
     min-height: 107px;
-    margin-bottom: 40px;
-    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -767,4 +757,9 @@ footer a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.popup,
+.popup-map{
+    display: none;
 }
