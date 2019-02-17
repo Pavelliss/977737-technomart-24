@@ -17,14 +17,14 @@
                             <img src="img/logo.svg" height="18" width="110" alt="Логотип Техномарт">
                         </a>
                     </li>
-                    <li>
+                    <li class="form-search">
                         <form action="https://echo.htmlacademy.ru" method="get">
                             <label for="search" class="visually-hidden">Поиск</label>
-                            <input type="search" name="search" id="search" placeholder="Поиск">
+                            <input type="search" name="search" id="search" placeholder="Поиск:">
                         </form>
                     </li>
-                    <li><a href="#">Закладки</a></li>
-                    <li><a href="#">Корзина</a></li>
+                    <li><a class="bookmarks" href="#">Закладки</a></li>
+                    <li><a class="basket" href="#">Корзина</a></li>
                     <li><a class="button-checkout" href="#">Оформить заказ</a></li>
                 </ul>
             </section>
@@ -164,4 +164,8 @@
     </div>
 
     </body>
+<!--потом удалим-->
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </html>
