@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Техномарт</title>
-        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="main-header login-menu-list">
@@ -90,7 +90,33 @@
             <div class="container-filter-catalog container">
                 <section class="filter">
                     <h2>Фильтр:</h2>
+                    <ul class="filter-sorting">
+                        <li>Сортировка:</li>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</li>
+                        <li><a href="#">По функционалу</li>
+                        <li><a href="#"><span class="visually-hidden">В начало</span></a></li>
+                        <li><a href="#"><span class="visually-hidden">В конец</span></a></li>
+                    </ul>
+
                     <form action="https://echo.htmlacademy.ru" method="get">
+                        <fieldset class="filter-item">
+                            <legend>Цена:</legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
+                                </div>
+                            </div>
+                        </fieldset>
+
                         <fieldset>
                             <legend>Производители:</legend>
                             <ul>
@@ -122,11 +148,11 @@
                             <legend>Питание:</legend>
                             <ul>
                                 <li>
-                                    <input class="filter-input-radio" id="battery" type="radio" name="filter-radio">
+                                    <input class="filter-input-radio" id="battery" type="radio" name="filter-radio" checked>
                                     <label for="battery">Аккумуляторные</label>
                                 </li>
                                 <li>
-                                    <input class="filter-input-radio" id="network" type="radio" name="filter-radio">
+                                    <input class="filter-input-radio" id="network" type="radio" name="filter-radio"  >
                                     <label for="network">Сетевые</label>
                                 </li>
                             </ul>
@@ -145,10 +171,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 3000</a>
                             </h3>
-                            <p>
-                                <div class="discount">22500 P.</div>
-                                <div class="price">15500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">22500 P.</p>
+                                <p class="price">15500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -162,10 +188,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 6000</a>
                             </h3>
-                            <p>
-                                <div class="discount">30500 P.</div>
-                                <div class="price">25500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">30500 P.</p>
+                                <p class="price">25500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -178,10 +204,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 2000</a>
                             </h3>
-                            <p>
-                                <div class="discount"></div>
-                                <div class="price">12500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount"></p>
+                                <p class="price">12500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -195,10 +221,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 3000</a>
                             </h3>
-                            <p>
-                                <div class="discount">22500 P.</div>
-                                <div class="price">15500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">22500 P.</p>
+                                <p class="price">15500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -212,10 +238,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 6000</a>
                             </h3>
-                            <p>
-                                <div class="discount">30500 P.</div>
-                                <div class="price">25500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">30500 P.</p>
+                                <p class="price">25500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -229,10 +255,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 2000</a>
                             </h3>
-                            <p>
-                                <div class="discount"></div>
-                                <div class="price">12500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount"></p>
+                                <p class="price">12500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -246,10 +272,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 3000</a>
                             </h3>
-                            <p>
-                                <div class="discount">22500 P.</div>
-                                <div class="price">15500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">22500 P.</p>
+                                <p class="price">15500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -264,10 +290,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 6000</a>
                             </h3>
-                            <p>
-                                <div class="discount">30500 P.</div>
-                                <div class="price">25500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount">30500 P.</p>
+                                <p class="price">25500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -280,10 +306,10 @@
                             <h3>
                                 <a href="#">Перфоратор BOSCH BFG 2000</a>
                             </h3>
-                            <p>
-                                <div class="discount"></div>
-                                <div class="price">12500 P.</div>
-                            </p>
+                            <div>
+                                <p class="discount"></p>
+                                <p class="price">12500 P.</p>
+                            </div>
                             <div class="pop-ups">
                                 <a class="button-buy" href="#">Купить</a>
                                 <a class="button-marker" href="#">В закладки</a>
@@ -291,21 +317,29 @@
                         </li>
                     </ul>
                     <ul class="pagination-list">
-                        <li class="pagination-item">
+                        <li class="pagination-item pagination-item-active">
                             <a>1</a>
                         </li>
-                        <li class="pagination-item">
-                            <a>2</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a>3</a>
+                        <li class="pagination-item ">
+                            <a href="">2</a>
                         </li>
                         <li class="pagination-item ">
-                            <a>Следующая</a>
+                            <a href="">3</a>
+                        </li>
+                        <li class="pagination-item ">
+                            <a href="">Следующая</a>
                         </li>
                     </ul>
                 </section>
             </div>
+
+            <article class="aside">
+                <b>Пара слов о перфораторах</b>
+                <p>
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                </p>
+            </article>
         </main>
 
          <footer class="main-footer">
@@ -378,12 +412,22 @@
         </footer>
 
         <!--Pop-ups-->
-        <div class="popup">
-            <p>Товар добавлен в корзину!</p>
-            <a href="#" class="button">Оформить заказ</a>
-            <button class="button">Продолжить покупки</button>
-            <button class="modal-close">Закрыть</button>
-        </div>
-    </body>
 
+        <div class="popup popup-cotalog">
+            <div class="container-popup">
+                <p>Товар добавлен в корзину!</p>
+                <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+            </div>
+            <div class="popup-button catalo-popup ">
+                <a href="#" class="button">Оформить заказ</a>
+                <button class="button button-catalog">Продолжить покупки</button>
+            </div>
+        </div>
+
+        <script src="js/popup.js"></script>
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    </body>
 </html>
