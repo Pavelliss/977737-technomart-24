@@ -938,6 +938,10 @@ fill: #c5c5c5;
 }
 
 /*POPULAR*/
+.popular-brand{
+    margin-bottom: 68px;
+}
+
 .popular-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -978,15 +982,16 @@ fill: #c5c5c5;
 
     color: #32425c;
 }
-.popular-product-list {
-    margin-bottom: 12px;
+
+.popular .popular-product-list {
+    margin-bottom: 4px;
 }
 
-.popular-product-list li {
-    margin-bottom: 10px;
+.popular .popular-product-list li {
+    margin-bottom: 18px;
 }
 
-.popular-product-list h3 {
+.popular .popular-product-list h3 {
     margin-top: 0;
 }
 
@@ -1015,7 +1020,7 @@ fill: #c5c5c5;
     margin: 0;
     padding: 0;
     min-height: 310px;
-    margin-bottom: 64px;
+
 }
 
 .popular-brand-list li {
@@ -1073,28 +1078,28 @@ fill: #c5c5c5;
 .popular-brand-list li:nth-child(5) img {
     width: 169px;
     height: 31px;
-    margin-top: 56px;
+    margin-top: 58px;
     margin-left: 27px;
 }
 
 .popular-brand-list li:nth-child(6) img {
     width: 121px;
     height: 73px;
-    margin-top: 33px;
+    margin-top: 35px;
     margin-left: 47px;
 }
 
 .popular-brand-list li:nth-child(7) img {
     width: 151px;
     height: 96px;
-    margin-top: 21px;
+    margin-top: 23px;
     margin-left: 34px;
 }
 
 .popular-brand-list li:nth-child(8) img {
     width: 204px;
     height: 69px;
-    margin-top: 32px;
+    margin-top: 34px;
     margin-left: 9px;
 }
 
@@ -1361,7 +1366,7 @@ fill: #c5c5c5;
             flex-direction: column;
 }
 
-.delevery-list l i {
+.delevery-list li {
     position: relative;
 
     padding: 10px 0;
